@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.widget.Button
 import android.widget.TextView
 import java.util.Stack
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
@@ -59,8 +60,15 @@ class MainActivity : AppCompatActivity() {
             val result = evaluateExpression(input)
             findViewById<TextView>(R.id.tvOutput).text = result.toString()
             input = result.toString() // Menampilkan hasil sebagai input baru
+
+            // Tampilkan hasil dalam toast
+            Toast.makeText(this, "Hasil: $result", Toast.LENGTH_SHORT).show()
+
         } catch (e: Exception) {
             findViewById<TextView>(R.id.tvOutput).text = "Error"
+
+            // Tampilkan pesan error dalam toast
+            Toast.makeText(this, "Terjadi kesalahan", Toast.LENGTH_SHORT).show()
         }
     }
 

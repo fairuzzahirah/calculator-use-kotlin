@@ -17,6 +17,14 @@
         android:id="@+id/tvOutput"
         android:textColor="@color/black"
         style="@style/tvAction"/>
+    <TextView
+        android:id="@+id/tvResult"
+        android:textColor="@color/black"
+        style="@style/tvAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="" />
     <LinearLayout
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
