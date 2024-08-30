@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Calculator" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/material_on_background_emphasis_medium</item>
+    </style>
+    <style name="tvAction">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:ellipsize">start</item>
+        <item name="android:gravity">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:textSize">50sp</item>
+        <item name="android:text">""</item>
+    </style>
+    <style name="button">
+        <item name="android:layout_margin">1dp</item>
+        <item name="background">@color/shadow_color</item>
+        <item name="android:background">@color/shadow_color</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">5dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="backgroundTint">@color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="Theme.Calculator" parent="Base.Theme.Calculator" />
+</resources>
